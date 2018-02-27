@@ -1,12 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>contact</h1>
+
+
+    <h1 class="text-center"> Contact Form</h1>
 
     <form role="form" id="contact-form" class="contact-form" method="POST" action="{{route('contact.store')}}">
 
         {{ csrf_field() }}
 
+        <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -32,5 +35,5 @@
             </div>
         </div>
     </form>
-
+    </div>
 @endsection
